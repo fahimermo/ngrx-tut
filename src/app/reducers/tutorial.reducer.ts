@@ -15,9 +15,9 @@ export function reducer(
     case TutorialActions.ADD_TUTORIAL:
       return [...state, action.payload];
 
-    case TutorialActions.AREMOVE_TUTORIAL:
-      state.splice(action.payload, 1);
-      return state;
+    case TutorialActions.REMOVE_TUTORIAL:
+      const index = action.payload;
+      return [...state.slice(0, index), ...state.slice(index + 1)];
 
     default:
       return state;
