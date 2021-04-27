@@ -1,6 +1,7 @@
 {
   "name": "ngrx-tut",
   "version": "0.0.0",
+  "homepage": "https://ngrx-tut.netlify.app/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
